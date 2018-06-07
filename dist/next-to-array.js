@@ -4,13 +4,13 @@
   var nx = global.nx || require('next-js-core2');
   var NUMBER = 'number';
   var STRING = 'string';
-  var isArrayLike = function (inObj) {
+  var isArrayNotString = function (inObj) {
     return typeof inObj.length === NUMBER && typeof inObj !== STRING;
   };
 
   nx.toArray = function (inObj) {
     if (!inObj) return [];
-    if (isArrayLike(inObj)) return nx.slice(inObj);
+    if (isArrayNotString(inObj)) return nx.slice(inObj);
     return [inObj];
   };
 
