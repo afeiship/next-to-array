@@ -33,6 +33,11 @@ describe('next/to-array', function () {
     assert.equal(nx.toArray(arr) === arr, false);
     assert.deepEqual(nx.toArray(arr), [1, 2, 3]);
   });
+  it('nx.toArray  [] Empty array', function () {
+    var arr = [];
+    assert.equal(nx.toArray(arr) === arr, false);
+    assert.deepEqual(nx.toArray(arr), []);
+  });
 
 
 
