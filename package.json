@@ -1,5 +1,5 @@
 {
-  "name": "next-to-array",
+  "name": "@feizheng/next-to-array",
   "version": "1.0.0",
   "description": "To array for object or array like.",
   "homepage": "https://github.com/afeiship/next-to-array",
@@ -9,22 +9,34 @@
   },
   "scripts": {
     "build": "gulp",
-    "test": "mocha"
+    "test": "jest",
+    "start": "node ./express.js"
   },
   "main": "dist/next-to-array.js",
   "license": "MIT",
   "devDependencies": {
-    "del": "^2.2.1",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-load-plugins": "^1.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-size": "^2.1.0",
-    "gulp-uglify": "^2.1.2",
-    "mocha": "^5.2.0",
-    "yargs": "^4.7.1"
+    "@feizheng/gulp-pkg-header": "^1.0.2",
+    "@feizheng/rake-git": "^1.2.1",
+    "del": "^5.1.0",
+    "express": "^4.17.1",
+    "gulp": "^4.0.2",
+    "gulp-debug": "^4.0.0",
+    "gulp-header": "^2.0.9",
+    "gulp-ignore": "^3.0.0",
+    "gulp-load-plugins": "^2.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "jest": "^25.2.3",
+    "prettier": "^2.0.2",
+    "uglify-save-license": "^0.4.1",
+    "yargs": "^15.3.1"
   },
   "dependencies": {
-    "next-js-core2": "github:afeiship/next-js-core2"
+    "@feizheng/next-js-core2": "^2.4.4"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
