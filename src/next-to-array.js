@@ -13,7 +13,7 @@
     if (!inObj) return result;
     var length = inLength || inObj.length;
 
-    if (isArrayLike(inObj) || typeof inLength === 'number') {
+    if (isArrayLike(inObj) || typeof inLength === NUMBER) {
       var i = length;
       while (i--) result[i] = inObj[i];
       return result;

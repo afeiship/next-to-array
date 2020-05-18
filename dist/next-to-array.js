@@ -2,8 +2,8 @@
  * name: @feizheng/next-to-array
  * description: To array for object or array like.
  * homepage: https://github.com/afeiship/next-to-array
- * version: 1.0.1
- * date: 2020-05-18T11:28:59.617Z
+ * version: 1.0.2
+ * date: 2020-05-18T11:29:42.882Z
  * license: MIT
  */
 
@@ -22,7 +22,7 @@
     if (!inObj) return result;
     var length = inLength || inObj.length;
 
-    if (isArrayLike(inObj) || typeof inLength === 'number') {
+    if (isArrayLike(inObj) || typeof inLength === NUMBER) {
       var i = length;
       while (i--) result[i] = inObj[i];
       return result;
