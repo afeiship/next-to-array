@@ -33,4 +33,14 @@ describe('api.basic test', () => {
     expect(nx.toArray(arr) === arr).toBe(false);
     expect(nx.toArray(arr)).toEqual([]);
   });
+
+  test('object like array but no length', () => {
+    var obj = {
+      0: 'a',
+      1: 'b',
+      2: 'c'
+    };
+    expect(nx.toArray(obj, 3)).toEqual(['a', 'b', 'c'])
+  })
+
 });
