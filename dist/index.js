@@ -1,7 +1,15 @@
+/*!
+ * name: @jswork/next-to-array
+ * description: To array for object or array like.
+ * homepage: https://github.com/afeiship/next-to-array
+ * version: 1.0.0
+ * date: 2020-11-21 10:44:50
+ * license: MIT
+ */
+
 (function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
-
+  var nx = global.nx || require('@jswork/next');
   var NUMBER = 'number';
   var STRING = 'string';
   var isArrayLike = function (inObj) {
