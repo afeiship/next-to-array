@@ -3,7 +3,7 @@
  * description: To array for object or array like.
  * homepage: https://github.com/afeiship/next-to-array
  * version: 1.0.0
- * date: 2020-11-21 10:44:50
+ * date: 2020-11-21 10:53:10
  * license: MIT
  */
 
